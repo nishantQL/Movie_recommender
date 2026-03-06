@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import pickle
 import pandas as pd
 import os
-import gdown
+import gdown # type: ignore
 
 app = FastAPI()
 
@@ -24,8 +24,8 @@ app.add_middleware(
 SIMILARITY_FILE = "similarity.pkl"
 MOVIES_FILE = "movies_df.pkl"
 
-SIMILARITY_URL = "https://drive.google.com/file/d/130zml4pGwAG7BU-RdeQuZlyDlwCRrNZe/view?usp=sharing"
-MOVIES_URL = "https://drive.google.com/file/d/1t0h5GlkARpagMoV9AdNKN-PxCokXe4Ik/view?usp=sharing"
+SIMILARITY_URL = "https://drive.google.com/file/d/130zml4pGwAG7BU-RdeQuZlyDlwCRrNZe/view?usp=drive_link"
+MOVIES_URL = "https://drive.google.com/file/d/1t0h5GlkARpagMoV9AdNKN-PxCokXe4Ik/view?usp=drive_link"
 
 
 if not os.path.exists(SIMILARITY_FILE):
