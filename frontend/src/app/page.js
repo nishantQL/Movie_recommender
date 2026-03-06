@@ -18,7 +18,7 @@ export default function Home() {
     if (!movie) return;
 
     const res = await fetch(
-      `http://127.0.0.1:8000/recommend/${movie}`
+      `https://movie-recommender-1-qo0e.onrender.com/recommend/${movie}`
     );
 
     const data = await res.json();
@@ -90,11 +90,11 @@ export default function Home() {
       {!searched && (
 
         <>
-          <h2 className="text-white text-2xl mt-20 ml-10">
-            Trending Movies
+          <h2 className="text-white text-2xl mt-16 ml-6">
+               Trending Movies
           </h2>
 
-          <div className="flex overflow-x-scroll gap-6 p-10 scrollbar-hide">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 p-6">
 
             {trending.map((m, i) => (
               <MovieCard key={i} movie={m} />
