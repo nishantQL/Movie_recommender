@@ -7,7 +7,7 @@ import gdown # type: ignore
 
 app = FastAPI()
 
-origins = ["http://localhost:3000"]
+origins = ["http://localhost:3000","https://movie-recommender-three-lemon.vercel.app"]
 
 app.add_middleware(
     CORSMiddleware,
