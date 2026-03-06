@@ -24,8 +24,8 @@ app.add_middleware(
 SIMILARITY_FILE = "similarity.pkl"
 MOVIES_FILE = "movies_df.pkl"
 
-SIMILARITY_URL = "https://drive.google.com/file/d/130zml4pGwAG7BU-RdeQuZlyDlwCRrNZe/view?usp=drive_link"
-MOVIES_URL = "https://drive.google.com/file/d/1t0h5GlkARpagMoV9AdNKN-PxCokXe4Ik/view?usp=drive_link"
+SIMILARITY_URL = "https://drive.google.com/uc?id=130zml4pGwAG7BU-RdeQuZlyDlwCRrNZe"
+MOVIES_URL = "https://drive.google.com/uc?id=1t0h5GlkARpagMoV9AdNKN-PxCokXe4Ik"
 
 
 if not os.path.exists(SIMILARITY_FILE):
